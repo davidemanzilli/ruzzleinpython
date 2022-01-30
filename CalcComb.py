@@ -21,7 +21,7 @@ class calcComb():
         self.__N = len(str)
         self.__listStringa = list(str)
 
-    def cerca(self): #verificare se la STRINGA attributo di istanza è presente nel file word.italian.txt 
+    def cerca(self): #verificare se la STRINGA è presente nel file word.italian.txt 
         f = open("class\words.italian.txt", 'r')
         #print(self.__stringa)
         for riga in f:
@@ -33,7 +33,7 @@ class calcComb():
             else:
                 False
 
-    def ConfUtil(self): #TODO da ricontrollare 
+    def ConfUtil(self):  
         for x in range(len(calcComb.permutSenzaRip(self))):  
             calcComb.permutSenzaRip(self)[x] = self.__stringa
             calcComb.cerca(self)
