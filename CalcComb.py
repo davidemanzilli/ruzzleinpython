@@ -162,6 +162,10 @@ class calcComb():
             temp = ''
         return combinazioni
 
-parola = calcComb("casa")
-print(parola.nDispSemplSenzaRip(2))
-print(parola.dispSemplSenzaRip(2))
+if __name__ == '__main__':
+    print('CalcComb.py - Ruzzle di Manzilli')
+
+
+    parola = calcComb("casa")
+    print(parola.nDispSemplSenzaRip(2))
+    print(parola.dispSemplSenzaRip(2))
